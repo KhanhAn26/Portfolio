@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="My%20Portfolio_files/style.css">
+</head>
+<body>
+    <div style="background:#004080;">
+    <marquee behavior="scroll" direction="left" scrollamount="8" style="color:white; font-size:20px; padding:10px;">
+      ⛄Welcome to my Website!
+    </marquee>
+  </div>
+    <header style="background:#66b2ff; text-align:center; padding:20px;">
+    <h1 style="color:white; margin-bottom:15px; font-size: 60px">My Portfolio</h1>
+    <nav>
+      <ul style="list-style:none; padding:0; margin:0;">
+        <li style="display:inline; margin:0 15px; font-size: 20px"><a href="#about" style="color:white; text-decoration:none;" class="active">About me</a></li>
+        <li style="display:inline; margin:0 15px; font-size: 20px"><a href="#about" style="color:white; text-decoration:none;" class="active">My activities</a></li>
+        <li style="display:inline; margin:0 15px; font-size: 20px"><a href="#contact" style="color:white; text-decoration:none;" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <section id="about" class="white-section">
+        <h2 style="text-align: left; color:red; font-size: 40px;">Who am I?</h2>
+        <figure style="float: right; margin-right: 70px; margin-top: -80px; text-align: center;">
+            <img src="My%20Portfolio_files/Me.JPG" style="width: 600px; border-radius: 15px; border: 3px solid #000;">
+            <figcaption style="font-size: 30px; color: gray; margin-top: 5px;">
+                This is me
+            </figcaption>
+        </figure>
+
+            <p style="text-align: left; font-size: 40px">
+                <span style="color:rgb(0, 0, 0);">My name is:</span>
+                <span style="color:green;">Vu Nguyen Khanh An</span>
+            </p>
+            <p style="text-align: left; font-size: 40px">
+                <span style="color:black;">I was born in:</span>
+                <span style="color:green;">2008</span>
+            </p>
+            <p style="text-align: left; font-size: 40px">
+                <span style="color:black;">I am studying in:</span>
+                <span style="color:green;">Le Hong Phong High School for the Gifted</span>
+            </p>
+            <p style="text-align: left; font-size: 40px">
+                <span style="color:black;">My major:</span>
+                <span style="color:green;">Data Science</span>
+            </p>
+            <p style="text-align: left; font-size: 40px">
+              <span style="color: black;">My hobby:</span>
+              <span style="color:green;">Japanese, feeding turtles</span>
+            </p>
+    </section>
+
+  <div class="activities-bar">
+  <span class="title" style="font-size: 40px; color:red">Activities</span>
+  <div class="angled-buttons">
+    <span class="instruction">Click these buttons to view →</span>
+    <button class="angled-btn" onclick="showContent('academic', event)">Academic Performance</button>
+    <button class="angled-btn" onclick="showContent('extra', event)">Extracurriculars</button>
+  </div>
+</div>
+
+<div class="academic-wrapper">
+  <div id="academic" class="activity-content">
+
+    <!-- School Grades -->
+    <div class="grades-section">
+      <h3>School Grade</h3>
+      <div class="grade-card">
+        <p><span class="year">Grade 9</span> <span class="score">9.4 / 10</span></p>
+        <div class="bar"><div class="fill" style="width:94%;"></div></div>
+
+        <p><span class="year">Grade 10</span> <span class="score">8.9 / 10</span></p>
+        <div class="bar"><div class="fill" style="width:89%;"></div></div>
+
+        <p><span class="year">Grade 11</span> <span class="score">9.0 / 10</span></p>
+        <div class="bar"><div class="fill" style="width:90%;"></div></div>
+      </div>
+    </div>
+
+    <br>
+
+    <!-- Standardized Tests -->
+    <div class="tests-box" style="display: none;">
+      <div class="tests-header">
+        <h3>Standardized Tests</h3>
+        <div class="buttons">
+          <span class="instruction">Click here to view →</span>
+          <button class="btn" onclick="showTest('sat', event)">SAT</button>
+          <button class="btn" onclick="showTest('ielts', event)">IELTS</button>
+          <button class="btn" onclick="showTest('ap', event)">AP</button>
+          <button class="btn" onclick="showTest('jlpt', event)">JLPT</button>
+        </div>
+      </div>
+
+      <div id="sat" class="test-content">
+        <p><strong>SAT</strong><br>Score: 1500/1600 (Superscore)</p>
+        <p>Reading &amp; Writing: 730</p>
+        <p>Math: 770</p>
+        <img src="My%20Portfolio_files/SAT.png" alt="SAT Result">
+      </div>
+
+      <div id="ielts" class="test-content">
+        <p><strong>IELTS</strong><br>Overall Band: 8.0 (L: 8.5, R: 9.0, W: 7.5, S: 6.5)</p>
+        <img src="My%20Portfolio_files/iELTS.png" alt="IELTS Result">
+      </div>
+
+      <div id="ap" class="test-content">
+        <p><strong>AP Exams</strong><br>Statistics: 3</p>
+        <img src="My%20Portfolio_files/AP.png" alt="Statistics">
+      </div>
+
+      <div id="jlpt" class="test-content">
+        <p><strong>JLPT N1</strong><br>Proficiency: Advanced Japanese (Vocabulary, Grammar, Reading)</p>
+        <img src="My%20Portfolio_files/Test%20Certi.png" alt="Certificate">
+        <img src="My%20Portfolio_files/Test%20Score%20Report.png" alt="Score Report">
+      </div>
+    </div>
+    
+    <h2 style="margin-top: 200px;">Awards and Courses</h2>
+    <section class="info-section">
+      <div class="info-box">
+        <p style="font-size: 25px">Third Prize in the 2024 Japanese National-level Competition (certificate issued in 2025)</p>
+        <div class="carousel">
+          <div class="carousel-item active">
+            <img src="My%20Portfolio_files/12%20-%20Color%20-%20BGD%20-%20National_3.png">
+          </div>
+          <div class="carousel-item">
+            <img src="My%20Portfolio_files/12%20-%20Color%20-%20BGD%20-%20National_4.png">
+          </div>
+          <button class="prev" onclick="moveSlide(-1)">❮</button>
+          <button class="next" onclick="moveSlide(1)">❯</button>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <p style="font-size: 25px">Best Paper Award in the 13th 
+International Conference on Frontiers of Intelligent Computing: Theory 
+and Applications (FICTA-2025) on 06th - 07th June, 2025 with the project
+ "Air-writing handwriting recognition solution using machine learning 
+technology to support visually and hearing-impaired individuals in 
+Vietnam". This paper is scheduled to be published in April 2026. </p>
+        <img src="My%20Portfolio_files/Science%20Research.png">
+      </div>
+
+      <div class="info-box">
+        <p style="font-size: 25px"><strong>Courses:</strong></p>
+        <ul style="font-size: 25px">
+          <li>Coursera: Introduction to Python Fundamentals by the University of Colorado Boulder</li>
+          <li>Coursera: Introduction to Python Functions by the University of Colorado Boulder</li>
+          <li>Coursera: Python Packages for Data Science</li>
+          <li>Coursera: Expressway to Data Science: Python Programming by the University of Colorado Boulder</li>
+        </ul>
+        <div class="carousel">
+          <div class="carousel-item active">
+            <img src="My%20Portfolio_files/10%20-%20Introduction%20to%20Python%20Fundamental%20Certi.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="My%20Portfolio_files/Introduction%20to%20Python%20Functions_1.png">
+          </div>
+          <div class="carousel-item">
+            <img src="My%20Portfolio_files/Python%20Packages%20for%20Data%20Science_1.png">
+          </div>
+          <div class="carousel-item">
+            <img src="My%20Portfolio_files/Expressway%20to%20Data%20Science_1.png">
+          </div>
+          <button class="prev" onclick="moveSlide(-1)">❮</button>
+          <button class="next" onclick="moveSlide(1)">❯</button>
+        </div>
+      </div>
+
+      <br>
+      <hr>
+      <br>
+      <br>
+      <div class="info-box">
+        <p style="font-size: 25px">Participated in the Aspiring Vietnam Contest 2024 organized by ABROAD IN VIETNAM</p>
+        <img src="My%20Portfolio_files/01-%20Aspiring%20Vietnam%20Contest_1.png">
+      </div>
+
+      <div class="info-box">
+        <p style="font-size: 25px">Participated in the 2024 School-level "Students with Startup Ideas" Contest with the project "Sanitary Pad Disposal Bag"</p>
+        <div class="carousel">
+          <div class="carousel-item active">
+            <img src="My%20Portfolio_files/11%20-%20Innovation%20Challenge_01.png">
+          </div>
+          <div class="carousel-item">
+            <img src="My%20Portfolio_files/11%20-%20Innovation%20Challenge_02.png">
+          </div>
+          <div class="carousel-item">
+            <img src="My%20Portfolio_files/11%20-%20Innovation%20Challenge_03.png">
+          </div>
+          <div class="carousel-item">
+            <img src="My%20Portfolio_files/11%20-%20Innovation%20Challenge_04.png">
+          </div>
+          <div class="carousel-item">
+            <img src="My%20Portfolio_files/11%20-%20Innovation%20Challenge_05.png">
+          </div>
+          <div class="carousel-item">
+            <img src="My%20Portfolio_files/11%20-%20Innovation%20Challenge_06.png">
+          </div>
+          <div class="carousel-item">
+            <img src="My%20Portfolio_files/11%20-%20Innovation%20Challenge_07.png">
+          </div>
+          <div class="carousel-item">
+            <img src="My%20Portfolio_files/11%20-%20Innovation%20Challenge_08.png">
+          </div>
+          <div class="carousel-item">
+            <img src="My%20Portfolio_files/11%20-%20Innovation%20Challenge_09.png">
+          </div>
+          <div class="carousel-item">
+            <img src="My%20Portfolio_files/11%20-%20Innovation%20Challenge_10.png">
+          </div>
+          <button class="prev" onclick="moveSlide(-1)">❮</button>
+          <button class="next" onclick="moveSlide(1)">❯</button>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <p style="font-size: 25px">Third Prize in the 2023 English City-level Competition</p>
+        <img src="My%20Portfolio_files/English%20Competition.jpg">
+      </div>
+    </section>
+
+    <h2>Languages I have learned besides English</h2>
+    <figure class="inline-fig">
+      <img src="My%20Portfolio_files/Flag_of_Japan.svg.png">
+      <figcaption>Japanese</figcaption>
+    </figure>
+    <figure class="inline-fig">
+      <img src="My%20Portfolio_files/Python-logo-notext.svg.png">
+      <figcaption>Python</figcaption>
+    </figure>
+    <figure class="inline-fig">
+      <img src="My%20Portfolio_files/SQL.png">
+      <figcaption>SQL</figcaption>
+    </figure>
+    <figure class="inline-fig">
+      <img src="My%20Portfolio_files/919827.png">
+      <figcaption>HTML</figcaption>
+    </figure>
+    <figure class="inline-fig">
+      <img src="My%20Portfolio_files/CSS.png">
+      <figcaption>CSS</figcaption>
+    </figure>
+    <figure class="inline-fig">
+      <img src="My%20Portfolio_files/javascript-logo-javascript-icon-transparent-free-png.webp">
+      <figcaption>JavaScript</figcaption>
+    </figure>
+  </div>
+</div>
+
+<div class="extracurriculars-wrapper">
+  <div id="extra" class="activity-content">
+    <h2><strong>COMMUNITY SERVICE</strong></h2>
+
+    <div class="activity-box">
+      <div class="left">
+        <div class="carousel">
+          <div class="carousel-item active">
+            <img src="My%20Portfolio_files/05%20-%20iClass_%202.png">
+          </div>
+          <div class="carousel-item">
+            <img src="My%20Portfolio_files/05%20-%20iClass_1.png">
+          </div>
+          <button class="prev" onclick="moveSlide(this,-1)">❮</button>
+          <button class="next" onclick="moveSlide(this, 1)">❯</button>
+        </div>
+      </div>
+      <div class="right">
+        <h3 style="color: red; text-align: center; font-size: 50px;">iClass</h3>
+        <p class="description">
+          iClass is an academic and volunteer club that organizes 
+community service projects for underprivileged groups. During a one-week
+ trip to Lam Dong province, I taught English and Math to K'Ho ethnic 
+children.
+        </p>
+      </div>
+    </div>
+    <br>
+    <h2><strong>INTERNSHIP</strong></h2>
+    <div class="activity-box">
+      <div class="left">
+        <div class="carousel">
+          <div class="carousel-item active">
+            <img src="My%20Portfolio_files/Acacy%20title.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="My%20Portfolio_files/KA%20Working.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="My%20Portfolio_files/CERTI%20ACACY_1.png">
+          </div>
+
+          <button class="prev" onclick="moveSlide(this,-1)">❮</button>
+          <button class="next" onclick="moveSlide(this, 1)">❯</button>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3 style="color: red; text-align: center; font-size: 50px;">Acacy Internship</h3>
+        <p class="description">
+        I completed a 5-week internship at Acacy, starting with intensive training before contributing to real projects. 
+        Here’s a sample project I built during training: 
+          <a href="https://www.novypro.com/profile_about/nguyen-khanh-an-vu?Popup=memberProject&amp;Data=1752031554944x425530812684816800" target="_blank">
+            View the project
+          </a>.
+        </p>
+      </div>
+    </div>
+
+    <h2><strong>JAPANESE-RELATED ACTIVITIES</strong></h2>
+    <div class="activity-box">
+      <div class="left">
+        <div class="carousel">
+          <div class="carousel-item active">
+            <img src="My%20Portfolio_files/Innovation.JPG">
+          </div>
+          <div class="carousel-item">
+            <img src="My%20Portfolio_files/VJIT%20Innovation%20Challenge.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="My%20Portfolio_files/03%20-%20Hosei_2.png">
+          </div>
+          <button class="prev" onclick="moveSlide(this,-1)">❮</button>
+          <button class="next" onclick="moveSlide(this, 1)">❯</button>
+        </div>
+      </div>
+      
+      <div class="right">
+        <h3 style="color: red; text-align: center; font-size: 50px;">VJIT Innovation Challenge in Japanese 2023</h3>
+        <p class="description">
+          We competed against 14 other teams within Ho Chi Minh City and
+ developed ideas to promote environmental protection in schools 
+(eco-school) with the topic about "Trash Sorting Scanner".
+        </p>
+      </div>
+    </div>
+
+      <div class="activity-box">
+        <div class="left">
+          <img src="My%20Portfolio_files/03%20-%20Hosei_1.png">
+        </div>
+        
+        <div class="right">
+          <h3 style="color: red; text-align: center; font-size: 50px;">Hosei University (法政大学) Japanese Speech Contest 2023</h3>
+          <p class="description">
+          I participated in the Speech Contest organized by Hosei 
+University in Japan with a prompt "Describe the school you want to 
+create".
+          </p>
+        </div>
+      </div>
+
+      <div class="activity-box">
+        <div class="left">
+          <div class="carousel">
+            <div class="carousel-item active">
+              <img src="My%20Portfolio_files/Culture%20exchange.png">
+            </div>
+            <div class="carousel-item">
+              <img src="My%20Portfolio_files/Culture%20exchange_2.png">
+            </div>
+            <button class="prev" onclick="moveSlide(this,-1)">❮</button>
+            <button class="next" onclick="moveSlide(this, 1)">❯</button>
+          </div>
+        </div>
+
+        <div class="right">
+          <h3 style="color: red; text-align: center; font-size: 50px;">Cultural Exchange Trip with Japanese Highschoolers</h3>
+          <p class="description">
+          In our first year at school, we often met the students from 
+Murasaki High School, Aoyama High School, and we took them around the 
+city (ideally the Nguyen Hue Walking Street) and introduced the 
+Vietnamese Culture and practised speaking Japanese. When we advanced to 
+the next grade, we had meeting groups with students from Keio 
+University, etc.
+          </p>
+        </div>
+      </div>
+
+      <h2><strong>OTHER ACTIVITIES</strong></h2>
+      <div class="activity-box">
+        <div class="left">
+          <img src="My%20Portfolio_files/04-%20HPV_1.png">
+        </div>
+        <div class="right">
+          <h3 style="color: red; text-align: center; font-size: 50px;">Innocent Guard HPV Vaccination Project 2024</h3>
+          <p class="description">
+          I got a consolidation prize on the HPV Vaccination Project in 
+2024, where we shared our knowledge and answered questions about the HPV
+ vaccine.          </p>
+        </div>
+
+        <div class="activity-box">
+          <div class="left">
+            <img src="My%20Portfolio_files/Adobe%20Express%20-%20file(1).png">
+          </div>
+          <div class="right">
+            <h3 style="color: red; text-align: center; font-size: 50px;">Economics for Youth Project</h3>
+            <p class="description">
+              I participated in this project as a Member of Specialist, 
+where I did my research on economics and finance conceptions 
+(Educational investments, Money Savings for Students, etc). We often had
+ bondings to discuss about projects, also. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<script>
+function showContent(id, event) {
+  const contents = document.querySelectorAll('.activity-content');
+  const buttons = document.querySelectorAll('.angled-btn');
+  const testsBox = document.querySelector('.tests-box');
+
+  contents.forEach(c => c.style.display = 'none');
+  buttons.forEach(b => b.classList.remove('active'));
+  if (testsBox) testsBox.style.display = 'none';
+
+  document.getElementById(id).style.display = 'block';
+  event.target.classList.add('active');
+
+  if (id === 'academic' && testsBox) testsBox.style.display = 'block';
+}
+
+function showTest(id, event) {
+  document.querySelectorAll('.test-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.btn').forEach(btn => btn.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  event.target.classList.add('active');
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  const testsBox = document.querySelector('.tests-box');
+  if (testsBox) testsBox.style.display = 'none';
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const carousels = document.querySelectorAll(".carousel");
+  const slideIndex = Array(carousels.length).fill(1);
+
+  function showSlide(n, no) {
+    const slides = carousels[no].querySelectorAll(".carousel-item");
+    if (n > slides.length) slideIndex[no] = 1;
+    if (n < 1) slideIndex[no] = slides.length;
+    slides.forEach(s => s.classList.remove("active"));
+    slides[slideIndex[no] - 1].classList.add("active");
+  }
+
+  function moveSlide(step, no) {
+    slideIndex[no] += step;
+    showSlide(slideIndex[no], no);
+  }
+
+  carousels.forEach((carousel, i) => {
+    const prev = carousel.querySelector(".prev");
+    const next = carousel.querySelector(".next");
+    if (prev) prev.onclick = () => moveSlide(-1, i);
+    if (next) next.onclick = () => moveSlide(1, i);
+  });
+});
+</script>
+
+<script>
+function moveSlide(button, direction) {
+  const carousel = button.closest('.carousel');
+  const items = carousel.querySelectorAll('.carousel-item');
+  let currentIndex = Array.from(items).findIndex(i => i.classList.contains('active'));
+  items[currentIndex].classList.remove('active');
+  currentIndex = (currentIndex + direction + items.length) % items.length;
+  items[currentIndex].classList.add('active');
+}
+</script>
+
+    <section id="contact" class="white-section">
+      <h2>Contact</h2>
+      <h3>Here are the platforms I normally use. Please feel free to contact me!</h3>
+      <div class="contact-grid">
+        <a href="https://github.com/KhanhAn26" target="_blank">
+          <img src="My%20Portfolio_files/GitHub.png" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/vu-nguyen-khanh-an-1189b0373/" target="_blank">
+          <img src="My%20Portfolio_files/LinkedIn_icon.svg.png" alt="LinkedIn">
+        </a>
+        <a href="https://www.facebook.com/khanh.an.375439" target="_blank">
+          <img src="My%20Portfolio_files/2023_Facebook_icon.svg.png" alt="Facebook">
+        </a>
+        <a href="mailto:khanhvunguyen26@gmail.com" target="_blank">
+          <img src="My%20Portfolio_files/Gmail_icon_(2020).svg.png" alt="Gmail">
+        </a>
+        <a href="https://www.novypro.com/profile_about/nguyen-khanh-an-vu" target="_blank">
+          <img src="My%20Portfolio_files/idhkGxS7rG.png" alt="NovyPro">
+        </a>
+        <a href="https://www.youtube.com/@Japanforeveryone" target="_blank">
+          <img src="My%20Portfolio_files/1384060.png" alt="YouTube">
+        </a>
+      </div>
+    </section>
+
+    <footer style="background:#004080; color:white; text-align:center; padding:15px;">
+     © 2025 Vu Nguyen Khanh An. All rights reserved.
+  </footer>
+  <button id="scrollTopBtn" style="display: none;">⇧</button>
+  <script>
+    const btn = document.getElementById("scrollTopBtn");
+
+  window.onscroll = function() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+  };
+
+  btn.onclick = function() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+  </script>
+
+</body></html>
